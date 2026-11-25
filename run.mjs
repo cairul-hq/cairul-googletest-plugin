@@ -1,6 +1,6 @@
 import { isAbsolute, join } from 'node:path';
-import { list, report, selectors, value } from '@cairul/plugin-kit/runner';
-import { junit } from '@cairul/plugin-kit/reports';
+import { list, report, selectors, value } from '@cairul/pdk/runner';
+import { junit } from '@cairul/pdk/reports';
 
 export default {
   select: selectors({ executable: value, suites: list, cases: list, exclude: list }, ['suites', 'cases', 'exclude']),
